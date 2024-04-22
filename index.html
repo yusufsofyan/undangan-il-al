@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il & Al</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sedan:ital@0;1&family=Kaushan+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nunito {
+            font-family: "Nunito", sans-serif;
+        }
+
+        .sedan {
+            font-family: "Sedan", sans-serif;
+        }
+
+        .Kaushan {
+            font-family: "Kaushan Script", cursive;
+        }
+
+        .mask {
+            display: block;
+            border-block-start: 3px;
+            width: 15%;
+            margin: 0 auto;
+            min-height: 8px;
+            mask-size: 12.7px;
+            mask-repeat: repeat-x;
+            background-color: #8D591DD1;
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E");
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'resize': 'resize 3s linear infinite',
+                        'minresize': 'minresize 3s linear infinite',
+                        'wiggle': 'wiggle 3s linear infinite',
+                        'spin': 'spin 10s linear infinite',
+                    },
+                    keyframes: {
+                        resize: {
+                            '0%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' },
+                            '100%': { transform: 'scale(1)' },
+                        },
+                        minresize: {
+                            '0%': { transform: 'scale(-1, 1)' },
+                            '50%': { transform: 'scale(-1.1, 1.1)' },
+                            '100%': { transform: 'scale(-1, 1)' },
+                        },
+                        wiggle: {
+                            '0%': { transform: 'rotate(0)' },
+                            '25%': { transform: 'rotate(-5deg)' },
+                            '50%': { transform: 'rotate(0)' },
+                            '75%': { transform: 'rotate(5deg)' },
+                            '100%': { transform: 'rotate(0)' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="nunito text-gray-700">
+    <div id="cover" class="fixed w-full h-full z-50 bg-black text-white duration-1000">
+        <div class="relative w-full h-full flex flex-col justify-center items-center px-6">
+            <div style="background-image: url(assets/bg-2-e1677315804323.webp);" class="opacity-50 absolute w-full h-full"></div>
+            <div class="z-10 flex flex-col justify-center items-center gap-6">
+                <h1 class="text-center text-2xl sedan">Undangan Khitan</h1>
+                <h2 class="text-center text-5xl py-8 Kaushan text-[#FFC643]">Kholilurrohman Ilyasa & Raffasya Al Fariq</h2>
+                <p class="text-center text-xl">Kpd Bpk/Ibu/Saudara/i</p>
+                <p id="namaTamu" class="text-center text-4xl sedan">Nama Tamu</p>
+                <p class="text-center text-lg">Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Berhadir Di Acara Tasyakura Khitan Anak Kami.</p>
+                <button id="trigger" class="flex justify-center items-center gap-2 px-8 py-4 bg-[#FFC643] hover:scale-110 duration-150 rounded-md w-max mx-auto text-gray-700 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-gray-700"><path d="m21.555 8.168-9-6a1 1 0 0 0-1.109 0l-9 6A1 1 0 0 0 2 9v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V9c0-.334-.167-.646-.445-.832zM12 4.202 19.197 9 12 13.798 4.803 9 12 4.202zM4 20v-9.131l7.445 4.963a1 1 0 0 0 1.11 0L20 10.869 19.997 20H4z"></path></svg>
+                    <span>Buka undangan</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="w-full max-w-[440px] mx-auto my-0 pt-0 overflow-hidden">
+        <section class="overflow-hidden bg-cover bg-center flex flex-col justify-center items-center relative pb-28" style="background-image: url(assets/bg-2-e1677315804323.webp);">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 left-0 w-[18%] animate-resize" data-aos="fade">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 right-0 w-[18%] -scale-x-100 animate-minresize" data-aos="fade">
+            <h1 class="mt-16 text-3xl sedan mb-6" data-aos="fade">Undangan Khitan</h1>
+            <img src="assets/lafazh-2-e1677316863828-1.webp" alt="allhamdulillah" class="w-[40%]" data-aos="fade">
+            <div class="relative min-h-[250px] w-full">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-16 absolute left-6 bottom-0 animate-wiggle" data-aos="fade-up" data-aos-delay="50">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-16 absolute right-6 bottom-0 animate-wiggle" data-aos="fade-up" data-aos-delay="50">
+            </div>
+            <div class="px-4">
+                <h2 class="text-center text-xl sedan" data-aos="fade-up" data-aos-delay="100">Tasyakuran Khitan</h2>
+                <h2 class="text-center text-4xl py-8 Kaushan text-[#CF9A20]" data-aos="fade-up" data-aos-delay="200">Kholilurrohman Ilyasa & Raffasya Al Fariq</h2>
+                <h2 class="text-center text-base" data-aos="fade-up" data-aos-delay="300">Putra dari Bpk. Entis Sutisna, SE & Ibu Enie Dinatu Shalihat, S.Kep</h2>
+            </div>
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -left-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -right-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+        </section>
+
+        <section class="overflow-hidden bg-cover bg-center flex flex-col justify-center items-center relative bg-[#D5A73F]">
+            <div class="absolute left-0 top-0 w-full h-full z-10 opacity-50" style="background-image: url(assets/bg-2-e1677315804323.webp);"></div>
+            <div class="z-20 flex flex-col justify-center items-center relative pb-28">
+                <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 left-0 w-[18%] animate-resize" data-aos="fade">
+                <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 right-0 w-[18%] -scale-x-100 animate-minresize" data-aos="fade">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-48 animate-spin absolute top-16" data-aos="fade-up" data-aos-delay="50">
+                <img src="assets/ars.webp" alt="allhamdulillah" class="w-[60%] z-10 mt-28" data-aos="fade">
+
+                <div class="px-4">
+                    <h2 class="text-center text-xl pt-8 pb-4 Kaushan" data-aos="fade-up" data-aos-delay="200">Rasulullah SAW Bersabda :</h2>
+                    <h2 class="text-center text-base pb-8" data-aos="fade-up" data-aos-delay="100">“Nabi Ibrahim as. berkhitan pada usia 80 (delapan puluh) tahun dengan menggunakan qadum”. (HR Muslim).</h2>
+                    <h2 class="text-center text-base pb-8" data-aos="fade-up" data-aos-delay="100">“Sunnah fitrah yang lima adalah khitan (sunat), istihdad (mencukur rambut kemaluan), memotong kuku, mencukur kumir, dan mencabut rambut ketiak” (HR. Bukhari 5889, Muslim 257).</h2>
+                </div>
+                <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -left-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+                <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -right-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+            </div>
+        </section>
+
+        <div class="relative animate-spin z-30">
+            <div data-aos="fade" data-aos-delay="50">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-48 absolute top-[-85px] left-[50%] translate-x-[-50%]">
+            </div>
+        </div>
+
+        <section class="overflow-hidden bg-cover bg-center flex flex-col justify-center items-center relative pb-28" style="background-image: url(assets/bg-2-e1677315804323.webp);">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 left-0 w-[18%] animate-resize" data-aos="fade">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 right-0 w-[18%] -scale-x-100 animate-minresize" data-aos="fade">
+            <p class="mt-48 text-2xl sedan text-center px-4" data-aos="fade">Assalamualaikum wr wb</p>
+            <p class="my-8 text-xl sedan text-center px-4" data-aos="fade">Dengan izin Allah SWT, dan dengan penuh kerendahan hati, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk berkenan hadir dalam acara Syukuran Khitan anak kami.</p>
+            <div class="w-full px-6 overflow-hidden pb-8" data-aos="fade-up" data-aos-delay="50">
+                <div class="bg-[#D5A73F] relative rounded-lg">
+                    <div class="absolute left-0 top-0 w-full h-full z-10 opacity-50" style="background-image: url(assets/bg-2-e1677315804323.webp);"></div>
+                    <div class="z-20 relative px-8 py-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="w-16 h-auto mx-auto fill-gray-700 mb-4"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg>
+                        <p class="text-xl sedan text-center">Hari & Tempat</p>
+                        <span class="mask my-4"></span>
+                        <p class="text-lg text-center">Minggu, 5 Mei 2024</p>
+                        <p class="text-lg text-center">Pukul 09.00 WIB - Selesai</p>
+                        <span class="mask my-4"></span>
+                        <p class="text-lg text-center mb-8">
+                            Jl. Raya Cibeber, Al-Hikmah RT. 02/RW.02 Desa Cibeber 1 Leuwiliang - Bogor
+                        </p>
+                        <a href="" class="flex justify-center items-center gap-2 px-8 py-4 bg-[#0d6efd] text-white hover:scale-110 duration-150 rounded-md w-max mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path></svg>
+                            <span class="text-lg">Petunjuk arah</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -left-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -right-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+        </section>
+
+        <section class="overflow-hidden bg-cover bg-center flex flex-col justify-center items-center relative bg-[#D5A73F]">
+            <div class="absolute left-0 top-0 w-full h-full z-10 opacity-50" style="background-image: url(assets/bg-2-e1677315804323.webp);"></div>
+            <div class="z-20 flex flex-col justify-center items-center relative pb-28">
+                <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 left-0 w-[18%] animate-resize" data-aos="fade">
+                <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 right-0 w-[18%] -scale-x-100 animate-minresize" data-aos="fade">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-gray-700 mt-36 mb-8 w-24 h-auto" data-aos="fade-up" data-aos-delay="50"><path d="M5 12H4v8a2 2 0 0 0 2 2h5V12H5zm13 0h-5v10h5a2 2 0 0 0 2-2v-8h-2zm.791-5A4.92 4.92 0 0 0 19 5.5C19 3.57 17.43 2 15.5 2c-1.622 0-2.705 1.482-3.404 3.085C11.407 3.57 10.269 2 8.5 2 6.57 2 5 3.57 5 5.5c0 .596.079 1.089.209 1.5H2v4h9V9h2v2h9V7h-3.209zM7 5.5C7 4.673 7.673 4 8.5 4c.888 0 1.714 1.525 2.198 3H8c-.374 0-1 0-1-1.5zM15.5 4c.827 0 1.5.673 1.5 1.5C17 7 16.374 7 16 7h-2.477c.51-1.576 1.251-3 1.977-3z"></path></svg>
+
+                <div class="px-4">
+                    <p class="text-center text-xl" data-aos="fade-up" data-aos-delay="100">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+                    <span class="mask my-4" data-aos="fade-up" data-aos-delay="50"></span>
+                    <p class="text-center text-xl" data-aos="fade-up" data-aos-delay="100">Jl. Raya Cibeber, Al-Hikmah RT. 02/RW.02 Desa Cibeber 1 Leuwiliang - Bogor</p>
+                </div>
+                <div class="px-4 w-full mt-8" data-aos="fade-up" data-aos-delay="50">
+                    <div class="rounded-lg p-8 flex flex-col gap-6" style="background-image: url(assets/bg-2-e1677315804323.webp);">
+                        <img src="assets/2560px-Bank_Central_Asia.svg.png" alt="" class="mx-auto w-[50%]">
+                        <p class="text-center">a.n. Entis Sutisna</p>
+                        <p class="text-center text-2xl font-bold">09999999XXX</p>
+                    </div>
+                </div>
+                <a href="" class="flex justify-center items-center gap-2 px-8 py-4 bg-[#0BBF4E] text-white hover:scale-110 duration-150 rounded-md w-max mx-auto mt-8" data-aos="fade-up" data-aos-delay="50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
+                    <span class="text-lg">Konfirmasi Hadiah</span>
+                </a>
+                <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -left-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+                <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -right-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+            </div>
+        </section>
+
+        <section class="overflow-hidden bg-cover bg-center flex flex-col justify-center items-center relative pb-28" style="background-image: url(assets/bg-2-e1677315804323.webp);">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 left-0 w-[18%] animate-resize" data-aos="fade">
+            <img src="assets/or-1-2-e1677315786686.webp" alt="ornamen" class="absolute top-0 right-0 w-[18%] -scale-x-100 animate-minresize" data-aos="fade">
+            <div class="relative min-h-[250px] w-full mt-48">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-16 absolute left-6 bottom-0 animate-wiggle" data-aos="fade-up" data-aos-delay="50">
+                <img src="assets/or-2-2-e1677315766252.webp" alt="ornamen" class="max-w-16 absolute right-6 bottom-0 animate-wiggle" data-aos="fade-up" data-aos-delay="50">
+            </div>
+            <div class="px-4 mt-8">
+                <p class="text-center text-xl sedan" data-aos="fade-up" data-aos-delay="100">Kami Yang Berbahagia Keluarga Besar</p>
+                <p class="text-center text-4xl py-8 Kaushan text-[#CF9A20]" data-aos="fade-up" data-aos-delay="200">Kholilurrohman Ilyasa & Raffasya Al Fariq</p>
+                <p class="text-center text-lg mb-8" data-aos="fade-up" data-aos-delay="300">Atas kehadiran dan doa restunya kami ucapkan terima kasih</p>
+                <p class="text-center text-base" data-aos="fade-up" data-aos-delay="300">Wassalamu’alaikum Wr. Wb.</p>
+            </div>
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -left-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+            <img src="assets/or-3-2-e1677315720815.webp" alt="ornamen" class="absolute -right-16 -bottom-16 animate-wiggle" data-aos="fade" data-aos-delay="50">
+        </section>
+        
+        <button id="mute" class="h-10 w-10 fixed bottom-5 right-5 z-40">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-gray-700"><path d="m7.727 6.313-4.02-4.02-1.414 1.414 18 18 1.414-1.414-2.02-2.02A9.578 9.578 0 0 0 21.999 12c0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7a8.13 8.13 0 0 1-1.671 4.914l-1.286-1.286C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V2.132L7.727 6.313zM4 17h2.697L14 21.868v-3.747L3.102 7.223A1.995 1.995 0 0 0 2 9v6c0 1.103.897 2 2 2z"></path></svg>
+        </button>
+        <button id="volume" class="h-10 w-10 fixed bottom-5 right-5 z-40" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-gray-700"><path d="M16 21c3.527-1.547 5.999-4.909 5.999-9S19.527 4.547 16 3v2c2.387 1.386 3.999 4.047 3.999 7S18.387 17.614 16 19v2z"></path><path d="M16 7v10c1.225-1.1 2-3.229 2-5s-.775-3.9-2-5zM4 17h2.697l5.748 3.832a1.004 1.004 0 0 0 1.027.05A1 1 0 0 0 14 20V4a1 1 0 0 0-1.554-.832L6.697 7H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h3c.033 0 .061-.016.093-.019a1.027 1.027 0 0 0 .38-.116c.026-.015.057-.017.082-.033L12 5.868v12.264l-4.445-2.964c-.025-.017-.056-.02-.082-.033a.986.986 0 0 0-.382-.116C7.059 15.016 7.032 15 7 15H4V9z"></path></svg>
+        </button>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out'
+        });
+        (function($) {
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'assets/Ada Band - Buah Hatiku.mp3');
+            
+            audioElement.addEventListener('ended', function() {
+                this.play();
+            }, false);
+
+            $('#trigger').on('click', function() {
+                $('#cover').css('transform', 'translateY(-100%)')
+                audioElement.play();
+            })
+
+            $('#mute').on('click', function() {
+                $(audioElement).prop("muted", true);
+                $(this).hide();
+                $('#volume').show()
+            })
+            $('#volume').on('click', function() {
+                $(audioElement).prop("muted", false);
+                $(this).hide();
+                $('#mute').show()
+            })
+
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            if (urlParams.has('to')) {
+                const to = urlParams.get('to')
+                $('#namaTamu').text(to)
+            } else {
+                $('#namaTamu').text("")
+            }
+        })(jQuery)
+
+    </script>
+</body>
+
+</html>
